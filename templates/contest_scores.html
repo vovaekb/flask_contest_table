@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contest table</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <style>
+    .container {
+      max-width: 1000px;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Contest table</h1>
+      <table class="table table-striped table-sm">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Score</th>
+            <th>Real score</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for contest_score in contest_scores%}
+          <tr>
+            <td>{{ contest_score[0] | int }}</td>
+            <td>{{ contest_score[1] }}</td>
+            <td>{{ contest_score[2] }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
+
