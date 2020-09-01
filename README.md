@@ -17,4 +17,4 @@ REST API endpoints:
 * /score (POST) - add contest score in format of JSON: {"id": int, "score": float, "real_score": float}. returns 'Success'
 
 ## Demo
-Demo on Heroku: https://tele2-flask-contest-table.herokuapp.com/contest_table.
+Demo on Heroku: https://flask-contest-table.herokuapp.com/contest_table.
